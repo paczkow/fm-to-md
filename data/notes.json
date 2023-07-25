@@ -1,0 +1,423 @@
+{
+    "id": "vsid_36985",
+    "user": {
+        "displayName": "Michał Paczków",
+        "email": "michal.paczkow@gmail.com",
+        "intercomDigest": "ca36e4d8abf91dd95dbe71d860c55338002bd6293a2fbb5ca0cabee49f57e25f",
+        "status": 1
+    },
+    "notes": [
+        {
+            "id": "9bc38f5c-9578-4604-aafa-d9c19361f0ff",
+            "lessonHash": "oNLUVkSBMf",
+            "lessonSeconds": 262,
+            "body": "\"this\" has been assigning scope during Execution Context creation.",
+            "createdAt": 1631865262000
+        },
+        {
+            "id": "13aa102f-8c06-4ed3-888c-c187c308089b",
+            "lessonHash": "rFGyqAYMrk",
+            "lessonSeconds": 51,
+            "body": "The arrow function doesn't have dynamic this. keyword. It's determined by where the function was saved/declared/created.\n\nJeśli w momencie tworzenia funkcji słowo kluczowe \"this.\" wskazuje na obiekt user1 to do tego obiektu będzie odnosić się \"this.\" w ramach tej funkcji.",
+            "createdAt": 1631865665000
+        },
+        {
+            "id": "bac893a6-6a5a-4d48-a9fa-da53833b9f70",
+            "lessonHash": "TrJxBDXSMn",
+            "lessonSeconds": 78,
+            "body": "Execution Context = Thread of Execution (line by line) + Memory to store data.\n\nTworzony jest przy każdym wywołaniu funkcji. Innymi słowy każda funkcja tworzy swój własny Execution Context.",
+            "createdAt": 1689508328000
+        },
+        {
+            "id": "d09c2ba6-417c-48af-a8a7-3f5c364a0b34",
+            "lessonHash": "BvhsxRExZr",
+            "lessonSeconds": 415,
+            "body": "Przy zwracaniu funkcji jako rezultatu do naszej zmiennej przypisujemy nie tylko samą funkcję, ale też dostęp do zmiennych, do których ta funkcja miała dostęp (określone jest na podstawie tego **\"gdzie\"** funkcja została zadeklarowana)",
+            "createdAt": 1689681407000
+        },
+        {
+            "id": "8d1c20b5-d3b3-4451-b689-617b20adcc27",
+            "lessonHash": "IFJBEDUFlI",
+            "lessonSeconds": 144,
+            "body": "Kolejność wyszukiwania zmiennych: Local Memory (part of Execution Context) -\u003e Closure of Function -\u003e External Context ... -\u003e Global Context.",
+            "createdAt": 1689681738000
+        },
+        {
+            "id": "66b67f34-d272-4570-bc39-ec5485175962",
+            "lessonHash": "qiPdPMPriQ",
+            "lessonSeconds": 291,
+            "body": "JavaScript inteligentnie optymalizuje domknięcia (closures) wrzucając do nich tylko elementy, których referencje pojawiają się w zwracanej funkcji, chroni nas to przed Memory Leak.",
+            "createdAt": 1689682570000
+        },
+        {
+            "id": "9344df16-1a35-4d92-98ec-c585642d9141",
+            "lessonHash": "OOqrzjtscT",
+            "lessonSeconds": 333,
+            "body": "\"Lexical\" means the physical positioning on the page.",
+            "createdAt": 1689683044000
+        },
+        {
+            "id": "03132c93-f17e-4a86-a949-4ac5edd72a6f",
+            "lessonHash": "HvULhXXMEn",
+            "lessonSeconds": 523,
+            "body": "Przykład działania Closure. \n\nMimo usunięcia Execution Context w ramach których zostały zadeklarowane zmienne, one wciąż są dostępne w \"plecaku\" funkcji (Closure).",
+            "createdAt": 1689755708000
+        },
+        {
+            "id": "6d03f2b1-0751-4898-820a-79d527e7b2ad",
+            "lessonHash": "RLPqfXKszf",
+            "lessonSeconds": 559,
+            "body": "__proto__ używane jest przez Javascript do znalezienia zmiennej lub funkcji, jeśli nie ma go w lokalnym \"Variable Environment\".",
+            "createdAt": 1689759952000
+        },
+        {
+            "id": "5f812705-462c-4ff1-bba4-eaffa2ab1c64",
+            "lessonHash": "xXKSnuqBcU",
+            "lessonSeconds": 232,
+            "body": "Jednym z kroków budowania Execution Context jest bindowanie słówka kluczowego \"this\" do określonego obiektu (jest to zależne od tego w jaki sposób wywołujemy funkcję).",
+            "createdAt": 1689763061000
+        },
+        {
+            "id": "8adefd04-4d21-4548-addf-b0a61e98cb68",
+            "lessonHash": "rFGyqAYMrk",
+            "lessonSeconds": 183,
+            "body": "Przykład tego w jaki sposób \"bindowane\" jest this. dla funkcji strzałkowych.",
+            "createdAt": 1689769504000
+        },
+        {
+            "id": "99a33c00-b926-4d56-8648-d692e86eec9f",
+            "lessonHash": "vOmofyEfyd",
+            "lessonSeconds": 448,
+            "body": "W Javascript funkcja to tak naprawdę: (1) funkcja, czyli zbiór instrukcji do wykonania + (2) obiekt zawierający pola związane z funkcji np. arguments. Jednym z takich pól jest prototype.",
+            "createdAt": 1689772070000
+        },
+        {
+            "id": "ccf75021-9f72-4292-b0fa-7310c7e4f7d5",
+            "lessonHash": "lqomHnVypz",
+            "lessonSeconds": 457,
+            "body": "Rola słowa kluczowego \"new\":\n\n1. Stworzenie pustego obiektu\n2. Przypisanie słowa kluczowego this do tego obiektu.\n2a. Przypisanie __proto__ obiektu do prototype funkcji kreatora.\n3. Wykonanie ciała funkcji - \nkreatora i przypisanie wartości pól do obiektu poprzez this.\n4. Zwrócenie obiektu.",
+            "createdAt": 1689772907000
+        }
+    ],
+    "bookmarked": false,
+    "progress": {
+        "BZQZvCoghZ": {
+            "percentViewed": 0.99769,
+            "lastWatched": 1689689898053,
+            "lastPercent": 0.99885,
+            "userCompleted": true
+        },
+        "BvhsxRExZr": {
+            "percentViewed": 0.99812,
+            "lastWatched": 1689872764911,
+            "lastPercent": 0.83239,
+            "userCompleted": true
+        },
+        "DPrzwwlWVd": {
+            "percentViewed": 0.81364,
+            "lastWatched": 1689873374696,
+            "lastPercent": 0.00909,
+            "userCompleted": true
+        },
+        "FXNFOyIenb": {
+            "percentViewed": 1,
+            "lastWatched": 1689508836000,
+            "lastPercent": 1,
+            "userCompleted": true
+        },
+        "HkrHRyjSqp": {
+            "percentViewed": 0.84793,
+            "lastWatched": 1689509807000,
+            "lastPercent": 1,
+            "userCompleted": true
+        },
+        "HvULhXXMEn": {
+            "percentViewed": 0.99866,
+            "lastWatched": 1689756090094,
+            "lastPercent": 0.99866,
+            "userCompleted": true
+        },
+        "IFJBEDUFlI": {
+            "percentViewed": 0.99359,
+            "lastWatched": 1689682181000,
+            "lastPercent": 1,
+            "userCompleted": true
+        },
+        "IOaQFmAfCi": {
+            "percentViewed": 0.84615,
+            "lastWatched": 1689684317000,
+            "lastPercent": 1,
+            "userCompleted": true
+        },
+        "MqodwDPsfn": {
+            "percentViewed": 1,
+            "lastWatched": 1689691655658,
+            "lastPercent": 1,
+            "userCompleted": true
+        },
+        "MwYjHXIDpm": {
+            "percentViewed": 0.46181,
+            "lastWatched": 1689509551000,
+            "lastPercent": 1,
+            "userCompleted": true
+        },
+        "NUYDiLyNlz": {
+            "percentViewed": 0.99871,
+            "lastWatched": 1689773199075,
+            "lastPercent": 0.99871,
+            "userCompleted": true
+        },
+        "OOqrzjtscT": {
+            "percentViewed": 0.98651,
+            "lastWatched": 1689687620727,
+            "lastPercent": 0.56492,
+            "userCompleted": true
+        },
+        "Ocjvvrwkxn": {
+            "percentViewed": 0.39237,
+            "lastWatched": 1689694614622,
+            "lastPercent": 1,
+            "userCompleted": true
+        },
+        "PNzKWHcxMZ": {
+            "percentViewed": 0.97268,
+            "lastWatched": 1689770541000,
+            "lastPercent": 1,
+            "userCompleted": true
+        },
+        "RLPqfXKszf": {
+            "percentViewed": 0.99563,
+            "lastWatched": 1689761179000,
+            "lastPercent": 1,
+            "userCompleted": true
+        },
+        "TFaJaUVsdX": {
+            "percentViewed": 1,
+            "lastWatched": 1689756294643,
+            "lastPercent": 1,
+            "userCompleted": true
+        },
+        "TdbYEZSUeR": {
+            "percentViewed": 1,
+            "lastWatched": 1689754609000,
+            "lastPercent": 1,
+            "userCompleted": true
+        },
+        "TrJxBDXSMn": {
+            "percentViewed": 0.99358,
+            "lastWatched": 1689773885569,
+            "lastPercent": 0.02998,
+            "userCompleted": true
+        },
+        "UndIBJwtoZ": {
+            "percentViewed": 0.99591,
+            "lastWatched": 1689694492661,
+            "lastPercent": 0.99796,
+            "userCompleted": true
+        },
+        "WMbtMKqEzn": {
+            "percentViewed": 1,
+            "lastWatched": 1689510191083,
+            "lastPercent": 1,
+            "userCompleted": true
+        },
+        "XGjvzCVHHY": {
+            "percentViewed": 0.98542,
+            "lastWatched": 1689763516035,
+            "lastPercent": 1,
+            "userCompleted": true
+        },
+        "avpTbTBfez": {
+            "percentViewed": 0.98786,
+            "lastWatched": 1689680879000,
+            "lastPercent": 1,
+            "userCompleted": true
+        },
+        "bQbZQmpBvy": {
+            "percentViewed": 0.99893,
+            "lastWatched": 1689693165522,
+            "lastPercent": 0.99893,
+            "userCompleted": true
+        },
+        "bsZjtAjuYM": {
+            "percentViewed": 0.98997,
+            "lastWatched": 1689754748000,
+            "lastPercent": 1,
+            "userCompleted": true
+        },
+        "cvZOwhedwI": {
+            "percentViewed": 0.87685,
+            "lastWatched": 1689692846602,
+            "lastPercent": 1,
+            "userCompleted": true
+        },
+        "dHonhvIuQo": {
+            "percentViewed": 1,
+            "lastWatched": 1689688341415,
+            "lastPercent": 1,
+            "userCompleted": true
+        },
+        "daGiKcipVN": {
+            "percentViewed": 0.99567,
+            "lastWatched": 1689509365205,
+            "lastPercent": 1,
+            "userCompleted": true
+        },
+        "drRrFgArPU": {
+            "percentViewed": 0.96954,
+            "lastWatched": 1689773243000,
+            "lastPercent": 1,
+            "userCompleted": true
+        },
+        "gHVkgbSOej": {
+            "percentViewed": 1,
+            "lastWatched": 1689688651662,
+            "lastPercent": 1,
+            "userCompleted": true
+        },
+        "gtNJFEsPqB": {
+            "percentViewed": 0.85931,
+            "lastWatched": 1689684289000,
+            "lastPercent": 1,
+            "userCompleted": true
+        },
+        "gxtvipYotj": {
+            "percentViewed": 1,
+            "lastWatched": 1689687791892,
+            "lastPercent": 1,
+            "userCompleted": true
+        },
+        "hGLXqBbbKd": {
+            "percentViewed": 0.99293,
+            "lastWatched": 1689508236000,
+            "lastPercent": 1,
+            "userCompleted": true
+        },
+        "hgiVdZtekd": {
+            "percentViewed": 1,
+            "lastWatched": 1689690089010,
+            "lastPercent": 1,
+            "userCompleted": true
+        },
+        "jYYKuTkShq": {
+            "percentViewed": 0.99708,
+            "lastWatched": 1689754960000,
+            "lastPercent": 1,
+            "userCompleted": true
+        },
+        "kVeNFNhvkc": {
+            "percentViewed": 1,
+            "lastWatched": 1689691327791,
+            "lastPercent": 0.98718,
+            "userCompleted": true
+        },
+        "lZBKRPrmJR": {
+            "percentViewed": 1,
+            "lastWatched": 1689694012428,
+            "lastPercent": 1,
+            "userCompleted": true
+        },
+        "lqomHnVypz": {
+            "percentViewed": 1,
+            "lastWatched": 1689773126982,
+            "lastPercent": 0.50996,
+            "userCompleted": true
+        },
+        "mFJhKdyHBV": {
+            "percentViewed": 0.99683,
+            "lastWatched": 1689509058985,
+            "lastPercent": 1,
+            "userCompleted": true
+        },
+        "mNKguqhsqI": {
+            "percentViewed": 0.9969,
+            "lastWatched": 1689678036000,
+            "lastPercent": 1,
+            "userCompleted": true
+        },
+        "msbfuclUKr": {
+            "percentViewed": 1,
+            "lastWatched": 1689693412830,
+            "lastPercent": 1,
+            "userCompleted": true
+        },
+        "nwBZDpWSci": {
+            "percentViewed": 1,
+            "lastWatched": 1689688852595,
+            "lastPercent": 1,
+            "userCompleted": true
+        },
+        "oNLUVkSBMf": {
+            "percentViewed": 1,
+            "lastWatched": 1689872849424,
+            "lastPercent": 0.56833,
+            "userCompleted": true
+        },
+        "oPPcryEQsz": {
+            "percentViewed": 0.98465,
+            "lastWatched": 1689677694309,
+            "lastPercent": 0.00512,
+            "userCompleted": true
+        },
+        "ouDKcQSHIu": {
+            "percentViewed": 1,
+            "lastWatched": 1689688071753,
+            "lastPercent": 1,
+            "userCompleted": true
+        },
+        "qiPdPMPriQ": {
+            "percentViewed": 0.98933,
+            "lastWatched": 1689682627007,
+            "lastPercent": 1,
+            "userCompleted": true
+        },
+        "rFGyqAYMrk": {
+            "percentViewed": 0.99007,
+            "lastWatched": 1689769681229,
+            "lastPercent": 0.99669,
+            "userCompleted": true
+        },
+        "rOJetsPouA": {
+            "percentViewed": 0.98539,
+            "lastWatched": 1689510758320,
+            "lastPercent": 0.98805,
+            "userCompleted": true
+        },
+        "rcFwLSDVsc": {
+            "percentViewed": 0.99237,
+            "lastWatched": 1689678622574,
+            "lastPercent": 1,
+            "userCompleted": true
+        },
+        "tKbTLZwIaE": {
+            "percentViewed": 0.99435,
+            "lastWatched": 1689684030000,
+            "lastPercent": 1,
+            "userCompleted": true
+        },
+        "uOalyfJvtU": {
+            "percentViewed": 0.91746,
+            "lastWatched": 1689510417054,
+            "lastPercent": 0.99683,
+            "userCompleted": true
+        },
+        "vOmofyEfyd": {
+            "percentViewed": 0.99453,
+            "lastWatched": 1689772355000,
+            "lastPercent": 1,
+            "userCompleted": true
+        },
+        "wUnwRPAbFY": {
+            "percentViewed": 1,
+            "lastWatched": 1689690852760,
+            "lastPercent": 0.03608,
+            "userCompleted": true
+        },
+        "xXKSnuqBcU": {
+            "percentViewed": 1,
+            "lastWatched": 1689763217592,
+            "lastPercent": 1,
+            "userCompleted": true
+        }
+    }
+}

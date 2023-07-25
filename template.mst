@@ -1,0 +1,15 @@
+# {{&title}}
+
+- Author: {{author}}
+- Description: {{description}}
+- Link: {{&link}}
+
+## Notes
+
+{{#notes}}
+### {{&lesson}}
+{{#lessonNotes}}
+- [{{timestamp}}s]({{&link}}) {{&body}} 
+
+{{/lessonNotes}}
+{{/notes}}
