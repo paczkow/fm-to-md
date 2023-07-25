@@ -1,6 +1,6 @@
 # {{&title}}
 
-- Author: {{author}}
+- Authors: {{authors}}
 - Description: {{description}}
 - Link: {{&link}}
 
@@ -9,7 +9,7 @@
 {{#notes}}
 ### {{&lesson}}
 {{#lessonNotes}}
-- [{{timestamp}}s]({{&link}}) {{&body}} 
+- [[{{timestamp}}s]]({{&link}}) {{&body}} 
 
 {{/lessonNotes}}
 {{/notes}}

@@ -1,16 +1,26 @@
 {
-  "name": "fm-markdown",
-  "version": "0.0.1",
-  "description": "Script to transfrom notes from frontendmaster.com to Markdown",
+  "name": "frontendmasters-md-notes",
+  "version": "1.0.0",
+  "description": "Transform notes from frontendmasters.com to Markdown and use it anywhere",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run format:check && npm run lint:check",
+    "format:check": "prettier --check .",
+    "format:write": "prettier --write .",
+    "lint:check": "eslint .",
+    "lint:fix": "eslint --fix ."
   },
   "author": "@paczkow",
   "license": "ISC",
   "dependencies": {
     "lodash.groupby": "^4.6.0",
-    "mustache": "^4.2.0"
+    "mustache": "^4.2.0",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "^3.0.0"
   }
 }
