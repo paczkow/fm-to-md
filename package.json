@@ -1,5 +1,5 @@
 {
-  "name": "frontendmasters-md-notes",
+  "name": "fm-to-md",
   "version": "1.0.0",
   "description": "Transform notes from frontendmasters.com to Markdown and use it anywhere",
   "main": "index.js",
@@ -10,6 +10,9 @@
     "format:write": "prettier --write .",
     "lint:check": "eslint .",
     "lint:fix": "eslint --fix ."
+  },
+  "bin": {
+    "run": "index.js"
   },
   "author": "@paczkow",
   "license": "ISC",
